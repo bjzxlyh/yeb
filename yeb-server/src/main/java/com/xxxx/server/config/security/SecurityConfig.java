@@ -20,6 +20,12 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     private IAdminService adminService;
 
+    @Autowired
+    private RestAuthorizationEntryPoint restAuthorizationEntryPoint;
+
+    @Autowired
+    private RestfulAccessDeniedHandler restfulAccessDeniedHandler;
+
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.userDetailsService(userDetailsService()).passwordEncoder(passwordEncoder());
@@ -44,9 +50,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .cacheControl();
         //添加JWT登录授权过滤器
         http.addFilterBefore(jwtAuthencationTokenFilter(), UsernamePasswordAuthenticationFilter.class);
+        //添加自定义未授权和未登录结果返回
         http.exceptionHandling()
-                .accessDeniedHandler()
-                .authenticationEntryPoint();
+                .accessDeniedHandler(restfulAccessDeniedHandler)
+                .authenticationEntryPoint(restAuthorizationEntryPoint);
 
     }
 
