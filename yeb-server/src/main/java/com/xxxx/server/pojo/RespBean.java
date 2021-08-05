@@ -26,7 +26,7 @@ public class RespBean {
      * @return
      */
     public static RespBean success(String message,Object obj){
-        return new RespBean(200,message,null);
+        return new RespBean(200,message,obj);
     }
 
     /**
