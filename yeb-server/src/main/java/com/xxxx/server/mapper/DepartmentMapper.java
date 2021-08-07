@@ -20,4 +20,17 @@ public interface DepartmentMapper extends BaseMapper<Department> {
      * @return
      */
     List<Department> getAllDepartments(Integer parentId);
+
+    /**
+     * 添加部门
+     * @param dep
+     * @return
+     */
+    void addDep(Department dep);
+
+    /**
+     * 删除部门
+     * @param dep
+     */
+    void deleteDep(Department dep);
 }
