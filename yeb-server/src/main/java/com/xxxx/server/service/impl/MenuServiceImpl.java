@@ -1,5 +1,6 @@
 package com.xxxx.server.service.impl;
 
+import com.xxxx.server.AdminUtils;
 import com.xxxx.server.pojo.Admin;
 import com.xxxx.server.pojo.Menu;
 import com.xxxx.server.mapper.MenuMapper;
@@ -34,7 +35,7 @@ public class MenuServiceImpl extends ServiceImpl<MenuMapper, Menu> implements IM
      */
     @Override
     public List<Menu> getMenusByAdminId() {
-        Integer adminId = ((Admin) SecurityContextHolder.getContext().getAuthentication().getPrincipal()).getId();
+        Integer adminId = AdminUtils.getCurrentAdmin().getId();
         ValueOperations<String,Object> valueOperations = redisTemplate.opsForValue();
         //从redis获取菜单数据
         List<Menu> menus =(List<Menu>) valueOperations.get("menu_" + adminId);
