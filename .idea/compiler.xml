@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="yeb-generator" />
+        <module name="Yeb-mail" />
         <module name="yeb-server" />
         <module name="Yeb-generator" />
       </profile>
@@ -16,14 +17,18 @@
       <module name="yeb" target="1.8" />
       <module name="yeb-generator" target="1.8" />
       <module name="Yeb-generator" target="1.8" />
+      <module name="yeb-mail" target="1.7" />
+      <module name="Yeb-mail" target="1.8" />
       <module name="yeb-server" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Yeb-generator" options="-parameters" />
+      <module name="Yeb-mail" options="-parameters" />
       <module name="yeb" options="-parameters" />
       <module name="yeb-generator" options="-parameters" />
+      <module name="yeb-mail" options="" />
       <module name="yeb-server" options="-parameters" />
     </option>
   </component>

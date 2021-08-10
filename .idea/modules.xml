@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Yeb-generator/Yeb-generator.iml" filepath="$PROJECT_DIR$/Yeb-generator/Yeb-generator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Yeb-mail/Yeb-mail.iml" filepath="$PROJECT_DIR$/Yeb-mail/Yeb-mail.iml" />
       <module fileurl="file://$PROJECT_DIR$/yeb.iml" filepath="$PROJECT_DIR$/yeb.iml" />
       <module fileurl="file://$PROJECT_DIR$/yeb-genertor/yeb-generator.iml" filepath="$PROJECT_DIR$/yeb-genertor/yeb-generator.iml" />
       <module fileurl="file://$PROJECT_DIR$/yeb-server/yeb-server.iml" filepath="$PROJECT_DIR$/yeb-server/yeb-server.iml" />
