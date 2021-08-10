@@ -30,7 +30,7 @@ public class MailLog implements Serializable {
 
     @ApiModelProperty(value = "消息id")
     @TableId("msgId")
-    private String msgid;
+    private String msgId;
 
     @ApiModelProperty(value = "接收员工id")
     private Integer eid;
@@ -40,7 +40,7 @@ public class MailLog implements Serializable {
 
     @ApiModelProperty(value = "路由键")
     @TableField("routeKey")
-    private String routekey;
+    private String routeKey;
 
     @ApiModelProperty(value = "交换机")
     private String exchange;
@@ -50,15 +50,15 @@ public class MailLog implements Serializable {
 
     @ApiModelProperty(value = "重试时间")
     @TableField("tryTime")
-    private LocalDateTime trytime;
+    private LocalDateTime tryTime;
 
     @ApiModelProperty(value = "创建时间")
     @TableField("createTime")
-    private LocalDateTime createtime;
+    private LocalDateTime createTime;
 
     @ApiModelProperty(value = "更新时间")
     @TableField("updateTime")
-    private LocalDateTime updatetime;
+    private LocalDateTime updateTime;
 
 
 }
