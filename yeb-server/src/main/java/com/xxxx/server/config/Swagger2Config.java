@@ -33,7 +33,7 @@ public class Swagger2Config {
 
     private ApiInfo apiInfo(){
         return new ApiInfoBuilder()
-                .title("腾讯小会议")
+                .title("腾讯小微信")
                 .description("腾讯小会议")
                 .contact(new Contact("李毅恒&马珂","http:localhost:8081/doc.html","834805011@qq.com"))
                 .version("1.0")
