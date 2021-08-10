@@ -5,18 +5,18 @@
     <!-- 通用查询映射结果 -->
     <resultMap id="BaseResultMap" type="com.xxxx.server.pojo.Salary">
         <id column="id" property="id" />
-        <result column="basicSalary" property="basicsalary" />
+        <result column="basicSalary" property="basicSalary" />
         <result column="bonus" property="bonus" />
-        <result column="lunchSalary" property="lunchsalary" />
-        <result column="trafficSalary" property="trafficsalary" />
-        <result column="allSalary" property="allsalary" />
-        <result column="pensionBase" property="pensionbase" />
-        <result column="pensionPer" property="pensionper" />
-        <result column="createDate" property="createdate" />
-        <result column="medicalBase" property="medicalbase" />
-        <result column="medicalPer" property="medicalper" />
-        <result column="accumulationFundBase" property="accumulationfundbase" />
-        <result column="accumulationFundPer" property="accumulationfundper" />
+        <result column="lunchSalary" property="lunchSalary" />
+        <result column="trafficSalary" property="trafficSalary" />
+        <result column="allSalary" property="allSalary" />
+        <result column="pensionBase" property="pensionBase" />
+        <result column="pensionPer" property="pensionPer" />
+        <result column="createDate" property="createDate" />
+        <result column="medicalBase" property="medicalBase" />
+        <result column="medicalPer" property="medicalPer" />
+        <result column="accumulationFundBase" property="accumulationFundBase" />
+        <result column="accumulationFundPer" property="accumulationFundPer" />
         <result column="name" property="name" />
     </resultMap>
 
