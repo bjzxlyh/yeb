@@ -32,19 +32,6 @@ Nginx 是高性能的 HTTP 和反向代理的服务器，处理高并发能力�
 
 
 ## 先创建数据库里面的表，再使用逆向工程创建各个POJO、Service等层
- public static String scanner(String tip) {
-        Scanner scanner = new Scanner(System.in);
-        StringBuilder help = new StringBuilder();
-        help.append("请输入" + tip + "：");
-        System.out.println(help.toString());
-        if (scanner.hasNext()) {
-            String ipt = scanner.next();
-            if (StringUtils.isNotBlank(ipt)) {
-                return ipt;
-            }
-        }
-        throw new MybatisPlusException("请输入正确的" + tip + "！");
-    }
 
     public static void main(String[] args) {
         // 代码生成器
@@ -125,9 +112,7 @@ Nginx 是高性能的 HTTP 和反向代理的服务器，处理高并发能力�
 
 
 ## 全局异常处理
-/**
- * 全局异常处理
- */
+
 @RestControllerAdvice
 public class GlobalException {
     @ExceptionHandler(SQLException.class)
