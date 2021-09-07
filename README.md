@@ -113,8 +113,7 @@ Nginx 是高性能的 HTTP 和反向代理的服务器，处理高并发能力�
 
 ## 全局异常处理
 
-
-
+@RestControllerAdvice
 public class GlobalException {
     @ExceptionHandler(SQLException.class)
     public RespBean mySqlException(SQLException e){
